@@ -12,6 +12,7 @@ $(document).ready(function () {
         }
         console.log(SDeck);
     }
+    Shuffle();
     function Draw(){
         CurrentCard = SDeck[0];
         SDeck.splice(0, 1);
@@ -21,11 +22,17 @@ $(document).ready(function () {
     $("#draw").click(function (e) { 
         e.preventDefault();
         Draw();
+        $(".space").addClass("clickable");
     });
-    $(".square").click(function (e) { 
+    $(".clickable").click(function (e) { 
         e.preventDefault();
-        Spaces--;
-        let id = this.id;
-        $(id).removeClass("square");
+        let id = `#${this.id}`;
+        if($(id).hasClass("clickable")){
+            $(".space").removeClass("clickable");
+            Spaces--;
+            $(id).text(CurrentCard);
+            $(id).removeClass("space");
+            $("#draw").removeAttr("disabled");
+        }
     });
 });
