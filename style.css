@@ -1,0 +1,8 @@
+.square{
+    width: 30px;
+    height: 30px;
+    display: inline-grid;
+    border-style: solid;
+    border-radius: 1px;
+    border-color: black;
+}
