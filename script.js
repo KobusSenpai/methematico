@@ -12,14 +12,13 @@ $(document).ready(function () {
             SDeck[i] = tempDeck[x];
             tempDeck.splice(x, 1);
         }
-        console.log(SDeck);
     }
     Shuffle();
     function Draw(){
         CurrentCard = SDeck[0];
         SDeck.splice(0, 1);
         $("#current").html(`Current card: ${CurrentCard}`);
-        $("#deck").html(`Cards remaining: ${Spaces}`);
+        $("#deck").html(`Cards remaining: ${Spaces - 1}`);
         $("#draw").attr("disabled", "true");
     }
     function Points(){
@@ -65,7 +64,7 @@ $(document).ready(function () {
             else if(temp[2] == temp[3] && temp[3] == temp[4]){
                 Points = 10;
             }
-            else if(temp[2] == temp[3] || temp[2] == temp[4]){
+            else if((temp[0] == temp[1] && (temp[2] == temp[3] || temp[3] == temp[4])) || (temp[1] == temp[2] && temp[3] == temp[4])){
                 Points = 3;
             }
         }
@@ -93,10 +92,12 @@ $(document).ready(function () {
             Spaces--;
             $(id).text(CurrentCard);
             $(id).removeClass("space");
-            $("#draw").removeAttr("disabled");
             Grid.splice(this.id - 1, 1, CurrentCard);
             if(Spaces == 0){
                 Points();
+            }
+            else{
+                $("#draw").removeAttr("disabled");
             }
         }
     });
