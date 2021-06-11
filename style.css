@@ -1,11 +1,86 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* Eric Meyer CSS Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Font */
+
+@font-face {
+    font-family: OpenSans;
+    src: url(Assets/OpenSans/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(Assets/Roboto/Roboto-Regular.ttf);
+}
+
+/* Grid Squares */
+
+#table, #counter{
+    text-align: center;
+    width: 95%;
+}
+#table{
+    display: grid;
+    gap: 0.2rem;
+}
 .square{
-    width: 30px;
-    height: 30px;
+    width: 1.875rem;
+    height: 1.875rem;
     display: inline-grid;
     text-align: center;
     vertical-align: middle;
+    align-content: center;
     border-style: solid;
-    border-radius: 1px;
+    border-width: 0.0625rem;
     border-color: black;
 }
 .faded{
@@ -13,6 +88,39 @@
     border-color: rgba(70, 80, 90, 0.2);
 }
 .empty{
-    background-color: white;
-    border-color: white;
+    background-color: transparent;
+    border-color: transparent;
 }
+
+/* Counter */
+
+#counter{
+    padding: 1.25rem;
+}
+#title{
+    font-family: OpenSans;
+    font-size: 2.25rem;
+    padding: 1rem;
+}
+#draw{
+    font-family: Roboto;
+    font-size: 1.05rem;
+    margin: 0.675rem;
+}
+#score{
+    font-family: Roboto;
+    font-size: 1.25rem;
+    color: darkgreen;
+}
+#current{
+    font-family: Roboto;
+    font-size: 1.10rem;
+}
+#deck{
+    font-family: Roboto;
+    font-size: 1.05rem;
+}
+
+/* Colors */
+
+/* Lili help me */
