@@ -1,7 +1,7 @@
 # methematico:
-Basic card game I've learned in elementary.
-It's basicly a modified version of Poker Patience.
-You draw a card, place it on the grid, and try to form some basic poker hands, except, suits don't matter here.
+Simple card game I've learned in elementary.
+It's basically a modified version of Poker Patience.
+You draw a card, place it on the grid, and try to form some basic poker hands, except, suits don't play a role here.
 
 # Scoring:
 
