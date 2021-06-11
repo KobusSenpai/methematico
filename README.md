@@ -1,14 +1,15 @@
-# methematico
-Basic card game I learned in elementary.
+# methematico:
+Simple card game I've learned in elementary.
+It's basically a modified version of Poker Patience.
+You draw a card, place it on the grid, and try to form some basic poker hands, except, suits don't play a role here.
 
-
-Scoring:
+# Scoring:
 
 Pair 1
 
 Three of a kind 6
 
-Four of a kind 16   ace: 20
+Four of a kind 16   Four aces 20
 
 Two pair 3
 
@@ -18,9 +19,10 @@ Full house 10
 
 Royal 16
 
+# Additional Info:
 
-Flushes don't matter here
+Suits don't matter.
 
-Royal is 1 10 11 12 13
+A 'Royal' is 1 10 11 12 13.
 
-Anything in diagonals has times 2 value
+Diagonals have a x2 multiplier.
