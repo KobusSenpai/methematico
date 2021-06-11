@@ -2,9 +2,17 @@
     width: 30px;
     height: 30px;
     display: inline-grid;
+    text-align: center;
+    vertical-align: middle;
     border-style: solid;
     border-radius: 1px;
     border-color: black;
-    text-align: center;
-    vertical-align: middle;
+}
+.faded{
+    background-color: rgba(70, 80, 90, 0.2);
+    border-color: rgba(70, 80, 90, 0.2);
+}
+.empty{
+    background-color: white;
+    border-color: white;
 }
