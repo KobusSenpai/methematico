@@ -95,6 +95,11 @@ $(document).ready(function () {
             Grid.splice(this.id - 1, 1, CurrentCard);
             if(Spaces == 0){
                 Points();
+                setTimeout(function(){
+                    if(confirm(`Your score is ${Score}. Another round?`)){
+                        location.reload();
+                    }
+                }, 2000);
             }
             else{
                 $("#draw").removeAttr("disabled");
