@@ -1,5 +1,5 @@
 # methematico
-Basic card game I learned in elementary.
+Basic card game I've learned in elementary.
 
 
 Scoring:
