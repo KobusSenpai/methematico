@@ -66,7 +66,6 @@ table {
 
 #table, #counter{
     text-align: center;
-    width: 95%;
 }
 #table{
     display: grid;
@@ -95,7 +94,7 @@ table {
 /* Counter */
 
 #counter{
-    padding: 1.25rem;
+    padding: 1.25rem 0 1.25rem 0;
 }
 #title{
     font-family: OpenSans;
