@@ -57,12 +57,9 @@ $(document).ready(function () {
                         Points = 20;
                     }
                 }
-                else if(temp[3] == temp[4]){
+                else if((temp[0] == temp[2] && temp[3] == temp[4]) || (temp[0] == temp[1] && temp[2] == temp[4])){
                     Points = 10;
                 }
-            }
-            else if(temp[2] == temp[3] && temp[3] == temp[4]){
-                Points = 10;
             }
             else if((temp[0] == temp[1] && (temp[2] == temp[3] || temp[3] == temp[4])) || (temp[1] == temp[2] && temp[3] == temp[4])){
                 Points = 3;
