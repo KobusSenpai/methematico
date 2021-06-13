@@ -17,7 +17,7 @@ Straight 12
 
 Full house 10
 
-Royal 16
+Royal 8
 
 # Additional Info:
 
