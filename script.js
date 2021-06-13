@@ -36,6 +36,7 @@ $(document).ready(function () {
             Score += CurrentScore;
         }
         let DiaRight = [Grid[4],Grid[8],Grid[12],Grid[16],Grid[20]];
+        console.log(DiaRight);
         CurrentScore = GetHand(DiaRight) * 2;
         Score += CurrentScore;
         $("#dia-r").text(CurrentScore);
@@ -46,7 +47,7 @@ $(document).ready(function () {
         $("#score").html(`Score: ${Score}`);
     }
     function GetHand(temp){
-        temp.sort();
+        temp.sort(function(a, b){ return a - b; });
         if(temp[0] == temp[1] || temp[1] == temp[2] || temp[2] == temp[3] || temp[3] == temp[4]){
             Points = 1;
             if(temp[0] == temp[2] || temp[1] == temp[3] || temp[2] == temp[4]){
@@ -69,7 +70,7 @@ $(document).ready(function () {
             Points = 5;
         }
         else if(temp[0] == 1 && temp[1] == 10 && temp[2] == 11 && temp[3] == 12 && temp[4] == 13){
-            Points = 16;
+            Points = 8;
         }
         else{
             Points = 0;
