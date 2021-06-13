@@ -36,7 +36,6 @@ $(document).ready(function () {
             Score += CurrentScore;
         }
         let DiaRight = [Grid[4],Grid[8],Grid[12],Grid[16],Grid[20]];
-        console.log(DiaRight);
         CurrentScore = GetHand(DiaRight) * 2;
         Score += CurrentScore;
         $("#dia-r").text(CurrentScore);

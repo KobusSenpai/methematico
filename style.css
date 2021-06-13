@@ -99,7 +99,7 @@ table {
 #title{
     font-family: OpenSans;
     font-size: 2.25rem;
-    padding: 1rem;
+    padding: 1rem 0 1rem 0;
 }
 #draw{
     font-family: Roboto;
