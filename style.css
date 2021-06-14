@@ -124,6 +124,7 @@ table {
 
 body{
     background: linear-gradient(to bottom, black, brown, red, orange, yellow, green, blue, purple);
+    background-repeat: no-repeat;
 }
 
 /* Lili help me */
